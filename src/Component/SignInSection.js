@@ -1,5 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FcGoogle } from "react-icons/fc";
+import { GrApple } from "react-icons/gr";
+
 
 function SignInSection() {
   return (
@@ -44,13 +47,13 @@ function SignInSection() {
     
       <button 
         type="button" 
-        className="p-3 w-full bg-transparent border border-black text-xs rounded-full shadow-md transition duration-300 mb-4 hover:bg-gray-100">
-        Continue with Google
+        className="p-3 w-full bg-transparent border border-black text-normal flex justify-center items-center rounded-full shadow-md transition duration-300 mb-4 hover:bg-gray-100">
+        <FcGoogle  className='mr-2'/> Continue with Google
       </button>
       <button 
         type="button" 
-        className="p-3 w-full bg-transparent border border-black text-xs rounded-full shadow-md transition duration-300 mb-4 hover:bg-gray-100">
-        <i className="fa-brands fa-apple mr-2"></i>Sign in with Apple
+        className="p-2 w-full bg-transparent border border-black text-normal flex justify-center items-center rounded-full shadow-md transition duration-300 mb-4 hover:bg-gray-100 font-semibold">
+        <GrApple className='mr-3'/>Sign in with Apple
       </button>
     </section>
   );
