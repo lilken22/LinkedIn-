@@ -29,6 +29,7 @@ function SignInSection() {
     
       <button 
         type="submit" 
+        onClick={() => window.location.href = 'https://www.linkedin.com'}
         className="p-3 w-full bg-blue-600 text-white text-xs rounded-full shadow-md transition duration-300 mb-4 hover:text-sm hover:shadow-none">
         Sign in
       </button>
@@ -47,11 +48,13 @@ function SignInSection() {
     
       <button 
         type="button" 
+        onClick={() => window.location.href = 'https://www.linkedin.com'}
         className="p-3 w-full bg-transparent border border-black text-normal flex justify-center items-center rounded-full shadow-md transition duration-300 mb-4 hover:bg-gray-100">
         <FcGoogle  className='mr-2'/> Continue with Google
       </button>
       <button 
         type="button" 
+        onClick={() => window.location.href = 'https://www.linkedin.com'}
         className="p-2 w-full bg-transparent border border-black text-normal flex justify-center items-center rounded-full shadow-md transition duration-300 mb-4 hover:bg-gray-100 font-semibold">
         <GrApple className='mr-3'/>Sign in with Apple
       </button>
